@@ -1,0 +1,502 @@
+:root {
+    --psdu-ink: #112238;
+    --psdu-blue: #0787dc;
+    --psdu-blue-dark: #0568ad;
+    --psdu-green: #168a68;
+    --psdu-green-soft: #eaf8f3;
+    --psdu-red: #b83b45;
+    --psdu-amber: #a96609;
+    --psdu-line: #dfe6ed;
+    --psdu-muted: #5f6d7a;
+    --psdu-surface: #ffffff;
+    --psdu-soft: #f4f7fa;
+}
+
+.payment_method_partsyhub_direct_usdt .psdu-choice {
+    display: grid;
+    grid-template-columns: 36px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0 8px;
+    padding: 12px;
+    border: 1px solid var(--psdu-line);
+    border-radius: 6px;
+    background: var(--psdu-surface);
+}
+
+.psdu-choice__token,
+.psdu-block-label__token {
+    display: inline-grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--psdu-green);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.psdu-choice strong,
+.psdu-choice small {
+    display: block;
+}
+
+.psdu-choice small {
+    color: var(--psdu-muted);
+    font-size: 12px;
+}
+
+.psdu-choice__tag {
+    color: var(--psdu-green);
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.psdu-choice__warning {
+    margin: 0 !important;
+    color: var(--psdu-red);
+    font-size: 12px;
+}
+
+.psdu-block-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: 700;
+}
+
+.psdu-block-label__token {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+}
+
+.psdu-block-label small {
+    padding: 2px 6px;
+    border: 1px solid #a9c9dd;
+    border-radius: 4px;
+    color: var(--psdu-blue-dark);
+    font-size: 10px;
+}
+
+.psdu-block-content {
+    display: grid;
+    gap: 5px;
+    color: var(--psdu-muted);
+    font-size: 13px;
+}
+
+.psdu-block-content p {
+    margin: 0;
+}
+
+.psdu-block-content strong {
+    color: var(--psdu-ink);
+}
+
+.psdu-panel {
+    width: min(100%, 920px);
+    margin: 28px auto;
+    border: 1px solid var(--psdu-line);
+    border-top: 4px solid var(--psdu-blue);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--psdu-surface);
+    color: var(--psdu-ink);
+    box-shadow: 0 14px 34px rgba(17, 34, 56, 0.08);
+}
+
+.psdu-panel *,
+.psdu-panel *::before,
+.psdu-panel *::after {
+    box-sizing: border-box;
+}
+
+.psdu-panel__header {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 14px;
+    padding: 22px 24px;
+    border-bottom: 1px solid var(--psdu-line);
+    background: #f6fafc;
+}
+
+.psdu-brandmark {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--psdu-green);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.psdu-eyebrow {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--psdu-blue-dark);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.psdu-panel h2 {
+    margin: 0 !important;
+    color: var(--psdu-ink);
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.psdu-panel__header p {
+    margin: 4px 0 0;
+    color: var(--psdu-muted);
+    font-size: 13px;
+}
+
+.psdu-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    max-width: 260px;
+    color: var(--psdu-amber);
+    font-size: 13px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.psdu-status__dot,
+.psdu-live-indicator {
+    flex: 0 0 auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    box-shadow: 0 0 0 4px rgba(169, 102, 9, 0.13);
+}
+
+.psdu-panel__body {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.5fr);
+    gap: 28px;
+    padding: 28px 30px;
+}
+
+.psdu-qr-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: 0;
+    padding: 20px;
+    border-right: 1px solid var(--psdu-line);
+}
+
+.psdu-qr {
+    display: grid;
+    place-items: center;
+    width: 236px;
+    height: 236px;
+    max-width: 100%;
+    padding: 8px;
+    border: 1px solid var(--psdu-line);
+    border-radius: 6px;
+    background: #fff;
+}
+
+.psdu-qr canvas,
+.psdu-qr img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 220px;
+}
+
+.psdu-network {
+    color: var(--psdu-green);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.psdu-details {
+    display: grid;
+    align-content: center;
+    gap: 16px;
+    min-width: 0;
+}
+
+.psdu-timer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: 44px;
+    padding: 10px 14px;
+    border: 1px solid #f0d6ad;
+    border-radius: 6px;
+    background: #fff8eb;
+    color: #704307;
+}
+
+.psdu-timer-row span {
+    font-size: 13px;
+}
+
+.psdu-timer-row strong {
+    min-width: 72px;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+}
+
+.psdu-field {
+    min-width: 0;
+}
+
+.psdu-field > span {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--psdu-muted);
+    font-size: 12px;
+}
+
+.psdu-exact-help {
+    display: block;
+    margin-top: 6px;
+    color: var(--psdu-amber);
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+.psdu-field > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: stretch;
+    min-height: 46px;
+    border: 1px solid var(--psdu-line);
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--psdu-soft);
+}
+
+.psdu-amount,
+.psdu-address {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    margin: 0;
+    padding: 10px 12px;
+    border: 0;
+    background: transparent;
+    color: var(--psdu-ink);
+    font-family: inherit;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.psdu-address {
+    font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+    font-size: 12px;
+}
+
+.psdu-copy {
+    min-width: 72px;
+    padding: 0 14px;
+    border: 0;
+    border-left: 1px solid var(--psdu-line);
+    border-radius: 0;
+    background: #fff;
+    color: var(--psdu-blue-dark);
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.psdu-copy:hover,
+.psdu-copy:focus-visible,
+.psdu-copy.is-copied {
+    background: #e8f4fb;
+    color: var(--psdu-ink);
+}
+
+.psdu-warning {
+    display: grid;
+    gap: 3px;
+    padding: 12px 14px;
+    border-left: 3px solid var(--psdu-red);
+    background: #fff3f3;
+    color: #71232a;
+    font-size: 12px;
+}
+
+.psdu-warning strong {
+    color: #71232a;
+}
+
+.psdu-panel__footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border-top: 1px solid var(--psdu-line);
+    background: var(--psdu-soft);
+    color: var(--psdu-muted);
+    font-size: 12px;
+}
+
+.psdu-live-indicator {
+    color: var(--psdu-green);
+    box-shadow: 0 0 0 4px rgba(22, 138, 104, 0.12);
+}
+
+.psdu-success {
+    display: grid;
+    gap: 5px;
+    padding: 28px 30px;
+    background: var(--psdu-green-soft);
+    color: #155f4b;
+}
+
+.psdu-expired-message {
+    padding: 24px 30px;
+    border-left: 4px solid var(--psdu-red);
+    background: #fff3f3;
+    color: #71232a;
+    font-weight: 700;
+}
+
+.psdu-panel--expired .psdu-panel__body {
+    display: none;
+}
+
+.psdu-panel--paid {
+    border-top-color: var(--psdu-green);
+}
+
+.psdu-panel--paid .psdu-status {
+    color: var(--psdu-green);
+}
+
+.psdu-panel--paid .psdu-status__dot {
+    box-shadow: 0 0 0 4px rgba(22, 138, 104, 0.13);
+}
+
+.psdu-panel--processing .psdu-status {
+    color: var(--psdu-blue-dark);
+}
+
+.psdu-panel--processing .psdu-status__dot {
+    box-shadow: 0 0 0 4px rgba(7, 135, 220, 0.13);
+}
+
+.psdu-panel--review {
+    border-top-color: var(--psdu-amber);
+}
+
+.psdu-panel--review .psdu-status {
+    color: var(--psdu-amber);
+}
+
+.psdu-panel--expired,
+.psdu-panel--failed,
+.psdu-panel--cancelled,
+.psdu-panel--error {
+    border-top-color: var(--psdu-red);
+}
+
+.psdu-panel--expired .psdu-status,
+.psdu-panel--failed .psdu-status,
+.psdu-panel--cancelled .psdu-status {
+    color: var(--psdu-red);
+}
+
+.psdu-panel--error {
+    padding: 24px;
+}
+
+@media (max-width: 720px) {
+    .payment_method_partsyhub_direct_usdt .psdu-choice {
+        grid-template-columns: 36px minmax(0, 1fr);
+    }
+
+    .psdu-choice__tag {
+        grid-column: 2;
+    }
+
+    .psdu-panel {
+        margin: 18px 0;
+    }
+
+    .psdu-panel__header {
+        grid-template-columns: 42px minmax(0, 1fr);
+        padding: 18px 16px;
+    }
+
+    .psdu-brandmark {
+        width: 42px;
+        height: 42px;
+        font-size: 21px;
+    }
+
+    .psdu-panel h2 {
+        font-size: 20px;
+    }
+
+    .psdu-status {
+        grid-column: 1 / -1;
+        justify-content: flex-start;
+        max-width: none;
+        text-align: left;
+    }
+
+    .psdu-panel__body {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 20px 16px;
+    }
+
+    .psdu-qr-column {
+        padding: 4px 0 20px;
+        border-right: 0;
+        border-bottom: 1px solid var(--psdu-line);
+    }
+
+    .psdu-qr {
+        width: 224px;
+        height: 224px;
+    }
+
+    .psdu-panel__footer {
+        align-items: flex-start;
+        padding: 14px 16px;
+    }
+
+    .psdu-address {
+        padding-right: 8px;
+        padding-left: 8px;
+        font-size: 11px;
+    }
+
+    .psdu-copy {
+        min-width: 66px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .psdu-panel *,
+    .psdu-panel *::before,
+    .psdu-panel *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}

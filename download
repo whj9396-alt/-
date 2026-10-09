@@ -1,0 +1,13 @@
+.env
+.env.*
+*.log
+*.sql
+*.sql.gz
+*.bak
+*.swp
+.DS_Store
+.idea/
+.vscode/
+node_modules/
+tmp/
+tests/_output/
